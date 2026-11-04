@@ -1,6 +1,6 @@
 :root {
     --Primary-Color: #ffffff;
-    --Secondary-Color: #97d68f;
+    --Secondary-Color: #74c669;
     --Tritary-Color: #b68f8f;
 }
 
@@ -12,6 +12,11 @@
 @font-face {
     font-family: Sunflower;
     src: url(../fonts/sunflower.otf);
+}
+
+@font-face {
+    font-family: GreenMatcha;
+    src: url(../fonts/GreenMatcha.otf);
 }
 
 * {
@@ -43,6 +48,12 @@
 
 /* Header */
 
+.lips {
+    width: 120px;
+    height: 50px;
+    margin-left: -25px;
+}
+
 header {
     position: fixed;
     width: 100%;
@@ -61,6 +72,21 @@ nav {
     justify-content: center;
     align-items: center;
     color: white;
+    margin-right: 100px;
+    max-height: 100px;
+    span {
+        font-family: GreenMatcha;
+        color: rgb(255, 255, 255);
+        justify-content: center;
+        text-align: center;
+        font-size: 15px;
+        margin-top: 11px;
+        margin-right: 5px;
+        margin-left: -25px;
+        text-shadow: 2px 2px black;
+        -webkit-text-stroke: rgba(0, 0, 0, 0.25) 1px ;
+    }
+    
 }
 
 nav > ul {
@@ -86,6 +112,7 @@ nav > ul button {
     background-color: var(--Secondary-Color);
     font-size: 40px;
     -webkit-text-stroke: rgba(0, 0, 0, 0.75) 2px ;
+    max-height: 100px;
 }
 
 nav > ul button:hover {
@@ -141,10 +168,22 @@ nav > ul button:hover {
     h1 {
         font-size: 100px;
         font-family: Gorbold;
-        -webkit-text-stroke: 5px white;
+        -webkit-text-stroke: 5px rgb(0, 0, 0);
+        color: #48c54b;
+    }
+    h2 {
+        font-size: 100px;
+        font-family: Gorbold;
+        -webkit-text-stroke: 2.5px rgb(255, 255, 255);
+    }
+    span {
+        font-family: Gorbold;
+    }
+    .four {
+        width: 100px;
+        margin-top: -40px;
     }
 }
-
 /* Body */
 
 .body-background {
@@ -204,6 +243,23 @@ nav > ul button:hover {
     margin-left: -25px;
     margin-right: -25px;
     background-color: var(--Secondary-Color);
+    color: white;
+    font-size: larger;
+    text-shadow: 1px 1px black;
+    text-align: center;
+    img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+}
+
+.banner {
+    img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
 }
 
 /* Gallery */
@@ -215,4 +271,11 @@ nav > ul button:hover {
         height: 250px;
         object-fit: cover;
     }
+}
+
+/* About */
+
+.about-info {
+    padding-top: 10px;
+    background-color: rgb(210, 210, 210);
 }
