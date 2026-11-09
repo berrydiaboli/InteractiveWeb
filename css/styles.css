@@ -115,7 +115,23 @@ nav > ul button {
     max-height: 100px;
 }
 
-nav > ul button:hover {
+.favicon {
+    background: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    text-decoration: none;
+    text-align: center;
+    display:inline;
+    padding: 20px;
+    background-color: var(--Secondary-Color);
+    font-size: 40px;
+    -webkit-text-stroke: rgba(0, 0, 0, 0.75) 2px ;
+    max-height: 100px;
+    width: 100px;
+}
+
+.favicon:hover {
     animation: header-nav-change 0.2s linear forwards;
 }
 
