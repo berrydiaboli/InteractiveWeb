@@ -82,8 +82,6 @@ header {
 }
 
 nav {
-    justify-content: center;
-    align-items: center;
     color: white;
     margin-right: 100px;
     max-height: 100px;
@@ -242,11 +240,18 @@ nav > ul button {
     .navButton {
         button {display: none;}
     }
-    nav > ul {
-        padding-left: 100px;
-        button {
-        font-size: 28px;
-        }
+    nav {
+        ul {
+            padding: 0;
+            display:flexbox;
+            span {
+                display: none;
+            }
+            button {
+                font-size: 28px;
+                margin-left: 2px;
+                margin-right: 2px;
+        }}
     }
     .favicon {
         img {
@@ -256,7 +261,8 @@ nav > ul button {
     }
     .shopToggle {
         top: 68px;
-        right: 145px;
+        right: 0;
+        left: 165px;
         button {
             font-size: 28px;
         }
