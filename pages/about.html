@@ -31,20 +31,24 @@
             <div class="col-md-12">
                 <nav>
                     <button class="favicon" id='home'>
-                        <img src="./images/favicon.png" alt="icon">
+                        <img src="../images/favicon.png" alt="icon">
                     </button>
-
                     <ul>
-                        <li><span id="randomFact" style="width: 75%;"></span></li>
+                        <li><span style="width: 75%;"></span></li>
                         <li><button id="gallery">Gallery</button></li>
                         <li><button id="shop">Shop</button></li>
                         <li><button id="about">About</button></li>
                     </ul>
+                    <div id="shopToggle" class="shutup">
+                        <button>Plants</button>
+                        <button>Pots</button>
+                        <button>Other</button>
+                    </div>
                 </nav>
             </div>
         </div>
         <div class="navButton" id="behindNavButton">
-            <button><img src="./images/arrow.png" alt="icon" style="width: 33px; height: 33px;"></button>
+            <button><img src="../images/arrow.png" alt="icon" style="width: 33px; height: 33px;"></button>
         </div>
     </header>
 
@@ -98,12 +102,7 @@
 
 
     <!-- JavaScript -->
-    <!-- Popper.js, then Bootstrap JS, then Your Own Script -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-        crossorigin="anonymous"></script>
-
-    
+    <script src="/js/popper.min.js"></script> <!--This is not my code, but an API I forced into here!-->
     <script src="/js/bootstrap.js"></script>
     <script src="/js/script.js"></script>
 </body>

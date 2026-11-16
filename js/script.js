@@ -17,6 +17,7 @@ var buttonNav = document.getElementById(`behindNavButton`);
 buttonNav.onclick = function() {
     document.getElementById(`bodyNav`).classList.toggle(`toggleNav`);
     buttonNav.classList.toggle(`buttontoggle`);
+    document.getElementById(`shopToggle`).classList.remove(`shopToggle`)
 };
 
 // The evil secret to check once a button is clicked if it takes to them to the website or the backrooms /j
@@ -58,4 +59,13 @@ const randomFact = [
     `<br><img class='lips' src='../images/lips.png'>`
 ];
 
-document.getElementById(`randomFact`).innerHTML = `<span style="font-size: 22px">PLANT FACT!</span>` + randomFact[Math.floor(Math.random() * randomFact.length)];
+//document.getElementById(`randomFact`).innerHTML = `<span style="font-size: 22px">PLANT FACT!</span>` + randomFact[Math.floor(Math.random() * randomFact.length)];
+
+// Shop Button
+
+var shopdiv = document.getElementById(`shop`)
+
+shopdiv.onclick = function() {
+    document.getElementById(`shopToggle`).classList.toggle(`shopToggle`);
+    console.log(`Fuck`)
+}
