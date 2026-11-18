@@ -31,15 +31,13 @@
             <div class="col-md-12">
                 <nav>
                     <button class="favicon" id='home'>
-                        <img src="./images/favicon.png" alt="icon">
+                        <img src="../images/favicon.png" alt="icon">
                     </button>
 
                     <ul>
-                        <li><span></span></li>
+                        <li><span style="width: 75%;"></span></li>
                         <li><button id="gallery">Gallery</button></li>
-                        <li><button id="shop">Shop</button>
-
-                        </li>
+                        <li><button id="shop">Shop</button></li>
                         <li><button id="about">About</button></li>
                     </ul>
                     <div id="shopToggle" class="shutup">
@@ -59,26 +57,36 @@
         <div class="row">
             <div class="col-12">
                 <h1>PLANTS <span id="heroEvent"></span> US!</h1>
+                <div id="factbox" class="randomFactBox">
+                    <div class="randomFactBoxTitle">
+                        <h2>RANDOM PLANT FACT!</h2>
+                        <button id="closeFactBox"></button>
+                    </div>
+                    <span id="randomFact"></span>
+                </div>
             </div>
         </div>
     </div>
 
     <!-- Start of BODY-->
 
-    <div class="container container-bg home">
+    <div class="container container-bg">
 
         <div class="row">
-            <div class="col-12">
+            <div class="col-8">
                 <h1 style="text-align: center;">WELCOME!</h1>
                 <p>This website is all about flora and plants, we sell plants and other stuff, so please take a look and enjoy your time visiting our website! Just make sure to not anger the one that watches. As they watch us all.</p>
             </div>
+            <div class="col-4">
+                <img src="./images/homepage/plantgrow.gif" alt="image" style="width: 100%;">
+            </div>
         </div>
+
         <div class="row">
             <div class="col-md-8">
                 <p>The sun is very important to us as humans and Floradians, cherish the son as you cherish your new born! The sun watches us all during the day and the lunar nights calms us as we go to bed.</p>
             </div>
-            <div class="col-4">
-                <img src="./images/homepage/plantgrow.gif" alt="image">
+            <div class="col-md-4">
             </div>
         </div>
         <div class="row row-bg">
@@ -128,7 +136,12 @@
 
 
     <!-- JavaScript -->
-    <script src="/js/popper.min.js"></script> <!--This is not my code, but an API I forced into here!-->
+    <!-- Popper.js, then Bootstrap JS, then Your Own Script -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+
+    
     <script src="js/bootstrap.js"></script>
     <script src="js/script.js"></script>
 </body>

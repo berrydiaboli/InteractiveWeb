@@ -59,7 +59,13 @@ const randomFact = [
     `<br><img class='lips' src='../images/lips.png'>`
 ];
 
-//document.getElementById(`randomFact`).innerHTML = `<span style="font-size: 22px">PLANT FACT!</span>` + randomFact[Math.floor(Math.random() * randomFact.length)];
+const factBox =
+
+document.getElementById(`randomFact`).innerHTML = randomFact[Math.floor(Math.random() * randomFact.length)];
+document.getElementById(`closeFactBox`).onclick = function () {
+    document.getElementById(`factbox`).style.display= `none`
+    console.log(`fuck`)
+}
 
 // Shop Button
 
@@ -67,5 +73,4 @@ var shopdiv = document.getElementById(`shop`)
 
 shopdiv.onclick = function() {
     document.getElementById(`shopToggle`).classList.toggle(`shopToggle`);
-    console.log(`Fuck`)
 }
