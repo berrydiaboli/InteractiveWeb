@@ -468,6 +468,63 @@ footer {
     }
 }
 
+/* Shop */
+
+.shop {
+    display:contents;
+    
+}
+
+.shopItem {
+    background: linear-gradient(125deg,rgba(72, 197, 75, 1) 0%, rgba(153, 255, 155, 1) 100%);
+    padding: 15px;
+    width: 350px;
+    height: 375px;
+    border-radius: 25px;
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: large;
+    box-shadow: 4px 4px 0px #02020236;
+    p span {
+        padding: 10px;
+        background-color: #c2edbc;
+        border-radius: 5px;
+    }
+    .shopImage {
+        span {
+            background-color: hsla(0, 0%, 100%, 0.75);
+            padding: 5px;
+            border-radius: 10px 0px 5px 0px;
+            font-size: x-large;
+            margin-left: 243px;
+        }
+        img {
+            border-radius: 10px;
+            width: 320px;
+            height: 210px;
+            object-fit: cover;
+            margin-bottom: -43px;
+            border: #2b942c;
+            border-style: solid;
+            border-width: 5px;
+        }
+    }
+    .shopButton {
+        button {
+            margin-top: 15px;
+            width: 100%;
+            padding: 5px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border-radius: 15px;
+            font-size: x-large;
+            border-width: 5px;
+        }
+    }
+}
+
 /* About */
 
 .about-info {

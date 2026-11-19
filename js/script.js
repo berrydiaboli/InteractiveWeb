@@ -4,7 +4,7 @@
 const heroEvent = document.getElementById(`heroEvent`);
 
 if (Math.floor(Math.random() * 10) >= 9) {
-    heroEvent.innerHTML = `<img class='four' src='../images/four.webp'>`;
+    heroEvent.innerHTML = `<img class='four' src='/images/four.webp'>`;
 }
 else {
     heroEvent.innerHTML = `<span style="color: #307ccf">4</span>`;
@@ -24,7 +24,7 @@ buttonNav.onclick = function() {
 
 function checkSecret() {
     if (Math.floor(Math.random() * 25) > 22) {
-        window.location.href = `../SECRET.html`;
+        window.location.href = `/SECRET.html`;
         return false;
     }
     else {
@@ -34,19 +34,37 @@ function checkSecret() {
 
 document.getElementById(`gallery`).onclick = function() {
     if (checkSecret()) {
-        window.location.href = `../pages/gallery.html`;
+        window.location.href = `/pages/gallery.html`;
     }
 };
 
 document.getElementById(`about`).onclick = function() {
     if (checkSecret()) {
-        window.location.href = `../pages/about.html`;
+        window.location.href = `/pages/about.html`;
     }
 };
 
 document.getElementById(`home`).onclick = function() {
     if (checkSecret()) {
-        window.location.href = `../index.html`;
+        window.location.href = `/index.html`;
+    } 
+};
+
+document.getElementById(`plants`).onclick = function() {
+    if (checkSecret()) {
+        window.location.href = `/pages/shop/plants.html`;
+    } 
+};
+
+document.getElementById(`pots`).onclick = function() {
+    if (checkSecret()) {
+        window.location.href = `/pages/shop/pots.html`;
+    } 
+};
+
+document.getElementById(`other`).onclick = function() {
+    if (checkSecret()) {
+        window.location.href = `/pages/shop/other.html`;
     } 
 };
 
@@ -56,7 +74,7 @@ const randomFact = [
     `<br>butterworts are omnivorous plants they can feed on insects and plant matter`,
     `<br>The difference between prickles thorns and spikes is that prickles are extensions of the outer epidermal tissue, thorns are shoots grown from the axial node and spikes are heavily modified leaves`,
     `<br><span style="color: red; font-size:22px">4 Minutes remain<span>`,
-    `<br><img class='lips' src='../images/lips.png'>`
+    `<br><img class='lips' src='/images/lips.png'>`
 ];
 
 const factBox =
